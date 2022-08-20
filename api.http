@@ -1,0 +1,30 @@
+
+
+GET http://localhost:3000/bank-accounts
+
+### Listar
+GET http://localhost:3000/bank-accounts/601f50d5-9b0c-4d8b-9f47-8d83aa224688
+
+
+###
+POST  http://localhost:3000/bank-accounts
+Content-Type: application/json
+
+{
+    "account_number": "1433"
+}   
+
+
+### Atualiza
+PATCH http://localhost:3000/bank-accounts/1234   
+Content-Type: application/json
+
+{
+    "account_number": 1234
+}   
+
+
+###
+DELETE  http://localhost:3000/bank-accounts/1234
+
+
